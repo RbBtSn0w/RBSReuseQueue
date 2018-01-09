@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RBSReuseQueue_Example' do
+  pod 'RBSReuseQueue', :path => '../'
+
+  target 'RBSReuseQueue_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
