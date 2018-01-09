@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/RBSReuseQueue.svg?style=flat)](http://cocoapods.org/pods/RBSReuseQueue)
 [![Platform](https://img.shields.io/cocoapods/p/RBSReuseQueue.svg?style=flat)](http://cocoapods.org/pods/RBSReuseQueue)
 
+RBSReuseQueue is a ObjC library for Simple set your reuse object in queue..
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

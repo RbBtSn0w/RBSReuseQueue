@@ -23,6 +23,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9776CBD8335A9DA5BDAEA7FF /* Pods_RBSReuseQueue_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE27D57FCD7E26B8D876A5A0 /* Pods_RBSReuseQueue_Tests.framework */; };
+		B1F3DEE12004C0D600F7FE42 /* RBSTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F3DEE02004C0D600F7FE42 /* RBSTipsView.m */; };
 		B349D8AE5D2F0048CA477496 /* Pods_RBSReuseQueue_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2811E344F46C15B9F72EF212 /* Pods_RBSReuseQueue_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,12 +62,14 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		858A8F46705BCC956BE141AD /* Pods-RBSReuseQueue_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBSReuseQueue_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RBSReuseQueue_Example/Pods-RBSReuseQueue_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A92A6A880551A3DD40C5B909 /* RBSReuseQueue.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RBSReuseQueue.podspec; path = ../RBSReuseQueue.podspec; sourceTree = "<group>"; };
+		A92A6A880551A3DD40C5B909 /* RBSReuseQueue.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RBSReuseQueue.podspec; path = ../RBSReuseQueue.podspec; sourceTree = "<group>"; };
+		B1F3DEDF2004C0D600F7FE42 /* RBSTipsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBSTipsView.h; sourceTree = "<group>"; };
+		B1F3DEE02004C0D600F7FE42 /* RBSTipsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBSTipsView.m; sourceTree = "<group>"; };
 		B65135874F8E151DFF1E8DB3 /* Pods-RBSReuseQueue_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBSReuseQueue_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RBSReuseQueue_Example/Pods-RBSReuseQueue_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BE27D57FCD7E26B8D876A5A0 /* Pods_RBSReuseQueue_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RBSReuseQueue_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C550BDBF7F79BF5F945389C1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C550BDBF7F79BF5F945389C1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F0361B23797D8CB723557E84 /* Pods-RBSReuseQueue_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBSReuseQueue_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RBSReuseQueue_Tests/Pods-RBSReuseQueue_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F04B6A20A7ED97148683DA0E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F04B6A20A7ED97148683DA0E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* RBSViewController.h */,
 				6003F5A6195388D20070C39A /* RBSViewController.m */,
+				B1F3DEDF2004C0D600F7FE42 /* RBSTipsView.h */,
+				B1F3DEE02004C0D600F7FE42 /* RBSTipsView.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -405,6 +410,7 @@
 			files = (
 				6003F59E195388D20070C39A /* RBSAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* RBSViewController.m in Sources */,
+				B1F3DEE12004C0D600F7FE42 /* RBSTipsView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

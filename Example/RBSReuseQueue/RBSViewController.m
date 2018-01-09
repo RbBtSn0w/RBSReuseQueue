@@ -7,6 +7,9 @@
 //
 
 #import "RBSViewController.h"
+#import <RBSReuseQueue/RBSReuseQueue.h>
+
+
 
 @interface RBSViewController ()
 
