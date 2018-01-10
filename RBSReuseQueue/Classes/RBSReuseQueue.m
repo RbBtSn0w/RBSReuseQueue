@@ -154,8 +154,11 @@ static inline NSException * UndeineProtolException(NSString *format, ...){
 - (void) registerClass:(nullable Class)aClass withReuseIdentifier:(NSString *)identifier{
     if (aClass) {
         NSAssert([aClass conformsToProtocol:@protocol(RBSReusableDelegate)], kUndeineProtolReason);
+        #pragma clang diagnostic push
+        #pragma clang diagnostic ignored "-Wunused-variable"
         id <RBSReusableDelegate> protolObject = [aClass alloc];
         NSAssert([protolObject respondsToSelector:@selector(initWithReuseIdentifier:)], kUndeineProtolInitReason);
+        #pragma clang diagnostic pop
         [self.registerClasses setObject:aClass forKey:identifier];
     } else {
         [self.registerClasses removeObjectForKey:identifier];
