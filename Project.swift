@@ -45,5 +45,19 @@ let project = Project(
                 .target(name: "RBSReuseQueue")
             ]
         )
+    ],
+    schemes: [
+        .scheme(
+            name: "RBSReuseQueue",
+            shared: true,
+            buildAction: .buildAction(targets: ["RBSReuseQueue"]),
+            testAction: .testTargets(["RBSReuseQueueTests"])
+        ),
+        .scheme(
+            name: "RBSReuseQueueExample",
+            shared: true,
+            buildAction: .buildAction(targets: ["RBSReuseQueueExample"]),
+            runAction: .runAction(executable: "RBSReuseQueueExample")
+        )
     ]
 )
