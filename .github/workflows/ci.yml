@@ -30,6 +30,6 @@ jobs:
       - name: Generate Project
         run: tuist generate
       - name: Test Framework
-        run: xcodebuild test -scheme RBSReuseQueue -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' clean build test
+        run: xcodebuild test -scheme RBSReuseQueue -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' clean build test
       - name: Build Example App
-        run: xcodebuild build -scheme RBSReuseQueueExample -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' clean build
+        run: xcodebuild build -scheme RBSReuseQueueExample -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' clean build
