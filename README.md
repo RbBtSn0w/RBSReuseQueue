@@ -20,9 +20,21 @@ To integrate RBSReuseQueue into your Xcode project using Swift Package Manager, 
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/rbbtsn0w/RBSReuseQueue.git", .branch("master"))
+    .package(url: "https://github.com/rbbtsn0w/RBSReuseQueue.git", from: "1.0.0")
+],
+targets: [
+    .target(
+        name: "YourTarget",
+        dependencies: ["RBSReuseQueue"]
+    )
 ]
 ```
+
+Alternatively, via Xcode:
+1. File > Add Packages...
+2. Search for `https://github.com/rbbtsn0w/RBSReuseQueue.git`
+3. Select "Up to Next Major Version" (e.g., 1.0.0)
+4. Add the `RBSReuseQueue` library to your target.
 
 ### Tuist
 
