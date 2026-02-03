@@ -1,6 +1,6 @@
 {
   "name": "rbsreusequeue",
-  "version": "0.0.0-semantically-released",
+  "version": "1.0.0",
   "description": "RBSReuseQueue is a ObjC library for Simple set your reuse object in queue.",
   "scripts": {
     "semantic-release": "semantic-release"
