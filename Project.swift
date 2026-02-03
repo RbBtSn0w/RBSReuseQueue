@@ -14,7 +14,8 @@ let project = Project(
             headers: .headers(
                 public: "Sources/RBSReuseQueue/include/RBSReuseQueue/*.h"
             ),
-            dependencies: []
+            dependencies: [],
+            settings: .settings(base: ["HEADER_SEARCH_PATHS": ["$(SRCROOT)/Sources/RBSReuseQueue/include"]])
         ),
         .target(
             name: "RBSReuseQueueTests",
