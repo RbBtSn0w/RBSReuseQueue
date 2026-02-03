@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+
+jobs:
+  spm:
+    name: SPM Build & Test
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: swift build
+      - name: Test
+        run: swift test
+
+  tuist:
+    name: Tuist Build & Test
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Tuist
+        run: |
+          brew tap tuist/tuist
+          brew install --formula tuist
+      - name: Generate Project
+        run: tuist generate
+      - name: Test Framework
+        run: xcodebuild test -workspace RBSReuseQueue.xcworkspace -scheme RBSReuseQueue -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' clean test
+      - name: Build Example App
+        run: xcodebuild build -workspace RBSReuseQueue.xcworkspace -scheme RBSReuseQueueExample -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' clean build
