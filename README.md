@@ -1,5 +1,7 @@
 # RBSReuseQueue
 
+[![CI](https://github.com/rbbtsn0w/RBSReuseQueue/actions/workflows/ci.yml/badge.svg)](https://github.com/rbbtsn0w/RBSReuseQueue/actions/workflows/ci.yml)
+
 RBSReuseQueue is a ObjC library for Simple set your reuse object in queue..
 
 ## Example
