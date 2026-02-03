@@ -29,7 +29,6 @@ let package = Package(
             path: "Tests/RBSReuseQueueTests",
             exclude: [
                 "Tests-Info.plist",
-                "Tests-Prefix.pch",
                 "en.lproj"
             ]
         ),

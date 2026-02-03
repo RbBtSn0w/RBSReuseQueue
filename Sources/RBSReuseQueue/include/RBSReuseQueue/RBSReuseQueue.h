@@ -22,6 +22,7 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
+#import "RBSReusableDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 @protocol RBSReusableDelegate;
