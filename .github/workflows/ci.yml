@@ -10,7 +10,7 @@ on:
 jobs:
   spm:
     name: SPM Build & Test
-    runs-on: macos-latest
+    runs-on: macos-15
     steps:
       - uses: actions/checkout@v4
       - name: Build
@@ -20,7 +20,7 @@ jobs:
 
   tuist:
     name: Tuist Build & Test
-    runs-on: macos-latest
+    runs-on: macos-15
     steps:
       - uses: actions/checkout@v4
       - name: Install Tuist

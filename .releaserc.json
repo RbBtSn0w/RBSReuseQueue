@@ -12,13 +12,21 @@
         "changelogFile": "CHANGELOG.md"
       }
     ],
+    "@semantic-release/npm",
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "sed -i 's/from: \"[0-9.]*\"/from: \"${nextRelease.version}\"/g' README.md"
+      }
+    ],
     "@semantic-release/github",
     [
       "@semantic-release/git",
       {
         "assets": [
           "CHANGELOG.md",
-          "package.json"
+          "package.json",
+          "README.md"
         ],
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
