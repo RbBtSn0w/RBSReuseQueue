@@ -32,6 +32,12 @@ Package.resolved
 Tuist/Derived/
 Tuist/Dependencies/
 
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
 # CocoaPods
 Pods/
 Podfile.lock
